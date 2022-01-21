@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <form>
+    <h1>Meme Generator</h1>
+
+    <label for="imgUrl">Insert img url : </label>
+    <span class = 'warning'>*</span>
+    <input type="text" id='imgUrl' placeholder="Place img URL here">
+    <br>
+    <label for="topText">top : </label>
+    <input type="text" id='topText' placeholder="Text at top">
+    <br>
+    <label for="bottomText">Bottom :</label>
+    <input type="text" id='bottomText' placeholder="Text at bottom">
+    <button class='submit'>Generate Meme</button>
+    <span class='instructions'>Double click anywhere on the image to remove</span>
+    <br>
+    <p class='warning'>* Image url must be jpg, jpeg, png, or gif</p>
+  </form>
+
+  <div id='memeBox'>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
